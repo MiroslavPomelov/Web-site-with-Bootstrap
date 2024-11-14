@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Передовая электроника</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="main-page" class="nav-link active" aria-current="page" href="index.html">На главную</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Пользователям</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Каталог
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a id="PC-page" class="dropdown-item" href="goods/computers.html">Компьютеры</a></li>
+                  <li><a id="TV-page" class="dropdown-item" href="goods/televisors.html">Телевизоры</a></li>
+                  <li><a id="Phone-page" class="dropdown-item" href="goods/phones.html">Смартфоны</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a id="vacuumCleaner-page" class="dropdown-item" href="goods/vacuum-cleaner.html">Пылесос?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button type="button" class="btn btn-link link-underline link-underline-opacity-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Вход</button>
+              <a id="reg-page" class="d-flex align-items-center me-3 link-offset-2 link-underline link-underline-opacity-0" href="registration-page/register-page.html">Регистрация</a>
+              <input id="searchBox" class="form-control me-2" type="search" placeholder="Название устройства" aria-label="Search">
+              <a id="searchButton" class="btn btn-outline-success" href="goods/searchPage.html" type="submit">Поиск</a>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Вход</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="user-login" class="form-label">Логин</label>
+                    <input type="text" class="form-control" id="user-login" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="user-password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="user-password">
+                  </div>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id="enter-button">Войти</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> 
+</body>
+</html>
